@@ -164,16 +164,35 @@ The objects in the `data` array or in the `potential_data` mappings vary dependi
 
 ## Question
 
-* `id` _int_
-* `text` _string_
-* `num_answers_allowed` _int_
+* `id` _int (required)_
+* `text` _string (required)_
+* `num_answers_allowed` _int (required)_
   * The number of answers allowed (typically 1, sometimes more)
-* `choices` _array_
+* `choices` _array (optional)_
+  * Optional if `potential_choices` and `dependent_question_id` are provided
   * Array of objects detailing the available answer choices:
     * `key` _string_: Key for identifying the choice
     * `text` _string_: Text to display to the user
+* `potential_choices` _object (optional)_
+  * Required if `choices` is not provided
+  * Object mapping answers from a previous question to choices, ex:
+    ```json
+    "potential_choices": {
+      "answer_key_1": [{
+        "key": "...",
+        "text": "..."
+      }],
+      "answer_key_2": [{
+        "key": "...",
+        "text": "..."
+      }]
+    }
+    ```
+* `dependent_question_id` _int (optional)_
+  * Question ID from which to get answers to populate the choices
+  * Required if `choices` is not provided
 
-Example Question:
+Example Question (with `choices`):
 ```json
 {
   "id": 1,
@@ -186,6 +205,26 @@ Example Question:
     "key": "grow_skills",
     "text": "Expand my skillset and/or advance in my career"
   }]
+}
+```
+
+Example Question (with `potential_choices`):
+```json
+{
+  "id": 3,
+  "text": "The companies you selected focus on the following topics. What interests you?",
+  "num_answers_allowed": 1,
+  "potential_choices": {
+    "google": [{
+      "key": "deep_learning",
+      "text": "Deep Learning"
+    }],
+    "amazon": [{
+      "key": "autonomous_systems",
+      "text": "Autonomous Systems"
+    }]
+  },
+  "dependent_question_id": 2
 }
 ```
 
