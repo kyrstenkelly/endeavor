@@ -1,0 +1,31 @@
+[{
+  "id": 1,
+  "type": "quote",
+  "dependent_question_id": 1,
+  "potential_results": {
+    "new_job": [{
+      "text": "Udacity helped me see a whole new world that I never knew existed. Today, after overcoming many challenges, I have completed two Nanodegree programs, and I have a solid vision for my life.",
+      "quotee": "Josh Bernard",
+      "quotee_title": "Alumni"
+    }],
+    "grow_skills": [],
+    "explore_hobby": [],
+    "build": [],
+    "other": []
+  }
+}, {
+  "id": 2,
+  "type": "statistic",
+  "dependent_question_id": 2,
+  "potential_results": {
+    "artificial_intelligence": [],
+    "data_science": [{
+      "title": "88%",
+      "subtitle": "Udacity Graduates",
+      "text": "Work in a field related to #DataScience."
+    }],
+    "programming": [],
+    "autonomous_systems": [],
+    "business": []
+  }
+}]

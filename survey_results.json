@@ -1,0 +1,38 @@
+{
+  "id": 1,
+  "survey_id": 1,
+  "survey_version": "1.0.0",
+  "email": "example@learning.org",
+  "answers": [{
+    "question_id": 1,
+    "question_text": "Millions of students come to Udacity worldwide...",
+    "selected_answers": [{
+      "key": "new_job",
+      "text": "Find a new job or switch careers"
+    }, {
+      "question_id": 2,
+      "question_text": "Which field are you most interested in?",
+      "selected_answers": [{
+        "key": "data_science",
+        "text": "Data Science"
+      }]
+    }, {
+      "question_id": 3,
+      "question_text": "Which companies interest you the most?",
+      "selected_answers": [{
+        "key": "google",
+        "text": "Google"
+      }, {
+        "key": "amazon",
+        "text": "Amazon"
+      }]
+    }, {
+      "question_id": 4,
+      "question_text": "The companies you selected offer careers that focus...",
+      "selected_answers": [{
+        "key": "deep_learning",
+        "text": "Deep Learning"
+      }]
+    }]
+  }]
+}

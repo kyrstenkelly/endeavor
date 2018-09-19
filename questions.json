@@ -1,0 +1,136 @@
+[{
+  "id": 1,
+  "text": "Millions of students come to Udacity worldwide, what brought you here?",
+  "num_answers_allowed": 1,
+  "choices": [{
+    "key": "new_job",
+    "text": "Find a new job or switch careers"
+  }, {
+    "key": "grow_skills",
+    "text": "Expand my skillset and/or advance in my career"
+  }, {
+    "key": "explore_hobby",
+    "text": "Explore a new interest or hobby"
+  }, {
+    "key": "build",
+    "text": "There's something I want to build"
+  }, {
+    "key": "other",
+    "text": "Other"
+  }]
+}, {
+  "id": 2,
+  "text": "Which field are you most interested in?",
+  "num_answers_allowed": 1,
+  "choices": [{
+    "key": "artificial_intelligence",
+    "text": "Artificial Intelligence"
+  }, {
+    "key": "data_science",
+    "text": "Data Science"
+  }, {
+    "key": "programming",
+    "text": "Programming"
+  }, {
+    "key": "autonomous_systems",
+    "text": "Autonomous Systems"
+  }, {
+    "key": "business",
+    "text": "Business"
+  }]
+}, {
+  "id": 3,
+  "text": "Which companies interest you the most?",
+  "num_answers_allowed": 3,
+  "choices": [{
+    "key": "google",
+    "image": "./path/to/google-logo",
+    "text": "Google"
+  }, {
+    "key": "amazon",
+    "image": "./path/to/amazon-logo",
+    "text": "Amazon"
+  }, {
+    "key": "att",
+    "image": "./path/to/att-logo",
+    "text": "At&T"
+  }, {
+    "key": "nvidea",
+    "image": "./path/to/nvidea-logo",
+    "text": "Nvidea"
+  }, {
+    "key": "mercedes",
+    "image": "./path/to/mercedes-logo",
+    "text": "Mercedes"
+  }, {
+    "key": "ibm",
+    "image": "./path/to/ibm-logo",
+    "text": "IBM"
+  }, {
+    "key": "didi",
+    "image": "./path/to/didi-logo",
+    "text": "DiDi"
+  }, {
+    "key": "oracle",
+    "image": "./path/to/oracle-logo",
+    "text": "Oracle"
+  }]
+}, {
+  "id": 4,
+  "text": "The companies you selected offer careers that focus on the following topics. Which of these interests you most?",
+  "num_answers_allowed": 1,
+  "potential_choices": {
+    "google": [{
+      "key": "deep_learning",
+      "text": "Deep Learning"
+    }, {
+      "key": "ai_trading",
+      "text": "AI for Trading"
+    }, {
+      "key": "machine_learning",
+      "text": "Machine Learning"
+    }, {
+      "key": "deep_reinforcement",
+      "text": "Deep Reinforcement"
+    }, {
+      "key": "digital_marketing",
+      "text": "Digital Marketing"
+    }],
+    "amazon": [],
+    "att": [],
+    "nvidea": [],
+    "mercedes": [],
+    "didi": [],
+    "oracle": []
+  },
+  "dependent_question_id": 3
+}, {
+  "id": 5,
+  "num_answers_allowed": 1,
+  "text": "The companies you selected offer careers that orbit in the following topics. What interests you the most?",
+  "potential_choices": {
+    "google": [{
+      "key": "small_group",
+      "text": "Small Group Learning"
+    }, {
+      "key": "1_1_feedback",
+      "text": "1:1 Feedback"
+    }, {
+      "key": "community_feedback",
+      "text": "Community Feedback"
+    }, {
+      "key": "self_paced_learning",
+      "text": "Self Paced Learning"
+    }, {
+      "key": "scheduled_learning",
+      "text": "Scheduled Learning"
+    }],
+    "amazon": [],
+    "att": [],
+    "nvidea": [],
+    "mercedes": [],
+    "didi": [],
+    "oracle": []
+  },
+  "dependent_question_id": 3
+}]

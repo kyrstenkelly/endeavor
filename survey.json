@@ -1,0 +1,57 @@
+{
+  "id": 1,
+  "version": "1.0.0",
+  "sections": [{
+    "id": 1,
+    "type": "intro",
+    "data": {
+      "title": "Welcome to Endeavor, <%= name %>",
+      "subtitle": "As you prepare to embark on your journey with Udacity, Endeavor is there to guide you on your path to success.",
+      "text": "The outcome of this quiz is to provide you with a personal checklist of things you can do to ensure your success with Udacity.",
+      "cta_text": "Get Started"
+    }
+  }, {
+    "id": 2,
+    "type": "question",
+    "data": {
+      "question_id": 1
+    }
+  }, {
+    "id": 3,
+    "type": "result",
+    "data": {
+      "result_id": 1
+    }
+  }, {
+    "id": 4,
+    "type": "question",
+    "data": {
+      "question_id": 2
+    }
+  }, {
+    "id": 5,
+    "type": "result",
+    "data": {
+      "result_id": 2
+    }
+  }, {
+    "id": 6,
+    "type": "question",
+    "data": {
+      "question_id": 3
+    }
+  }, {
+    "id": 7,
+    "type": "result",
+    "data": {
+      "result_type": "statistic",
+      "dependent_question_id": 3
+    }
+  }, {
+    "id": 8,
+    "type": "question",
+    "data": {
+      "question_id": 4
+    }
+  }]
+}
